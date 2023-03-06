@@ -11,6 +11,15 @@
     --container-width:1200px;
     
 }
+
+@font-face{
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.ttf);
+}
+
+html{
+    font-family: Roboto-Regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 h1,h2,h3{
 color:var(--Green)
 }
@@ -75,7 +84,13 @@ body{
         font-size: 9px;
         margin: 0.8rem 0;
         }
+    .video__container{
         
+        width: 80%;
+        height: 80%;
+        
+            
+        }
 }
 
 @media (max-width: 480px ){
@@ -118,7 +133,7 @@ width: 100%;
     max-width: inherit;
     flex-direction: column;
     max-height: 100vh;
-
+    
 }
 
 
@@ -165,7 +180,7 @@ width: 100%;
 
 .main__section__2{
     padding: 0 1rem;
-    margin: 2rem 0;
+    margin: 5rem 0;
     display: flex;
     flex-direction: row;
     
@@ -210,8 +225,9 @@ width: 100%;
 }
 
 .like__container{
-    padding: 1rem;
-    margin-top: 0.5rem;
+    margin-top: -0.3rem;
+    padding: 0  0.4rem 1rem;
+    
 }
 
 .sec__2__item__title{
@@ -253,43 +269,55 @@ margin-left: 0.8rem;
     padding: 0;
     width: 100%;
 }
-.sec4__second__img__container{
-    width: 20%;
-    }
-.pasos__foto{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+
+
 .right__side__items__container{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
     margin-top: -1rem;
     padding-top: 0;
 }
-.right_side_item:not(:last-child){
-   
-    border-bottom: 2px var(--Green) solid;
+
+.sec__4__right__side__item{
+    display: flex;
+    
+}
+.border{border-bottom: 2px var(--Green) solid;}
+.sec__4__rs__text{
+    width: 80%;
+}
+.right__side__item__icon{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.sec__4__icon{
+    width: 80%;
 }
 
 .main__section__5{
     
     background-color: var(--Light-Gray);
     width: inherit;
-   
+    min-height: 80vh;
     
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
+    margin-top: 6rem;
 }
 .video__title{
+    margin-top: 1rem;
     width: 60%;
     text-align: center;
 }
 .video__container{
+    margin-top: 2rem;
     width: 80%;
-    height: 80%;
+    height: 18rem;
     padding: 0.7rem;
     background-color: var(--dark-Gray);
     
